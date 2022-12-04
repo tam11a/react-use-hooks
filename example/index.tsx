@@ -4,7 +4,7 @@ import { useTitle, useToggle } from '../.';
 
 const App = () => {
   // useTitle
-  useTitle('React Use Hooks!!')
+  useTitle('Hooks for React!!')
 
   // useToggle
   const {state, toggleState} = useToggle(true);
