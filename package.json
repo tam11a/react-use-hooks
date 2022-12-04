@@ -57,5 +57,7 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.4.1",
     "typescript": "^3.9.10"
-  }
+  },
+  "author": "tam11a <ibrahimsadiktamim@gmail.com> (https://github.com/tam11a)",
+  "repository": "tam11a/react-use-hooks",
 }
