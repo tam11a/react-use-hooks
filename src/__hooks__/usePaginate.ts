@@ -1,11 +1,29 @@
 import {useState} from "react";
 
-const usePaginate = ({ defaultParams }: Props) => {
+interface IParams {
+  limit?: number,
+  page?: number,
+  search?: string,
+  filters?: {[key: string]: string}
+}
+
+const defaultParams: IParams = {
+  limit: 10,
+  page: 1,
+  search: "",
+  filters: {}
+}
+
+interface IProps {
+  defaultParams?: typeof defaultParams
+}
+
+const usePaginate = (props?: IProps) => {
   const [params, setParams] = useState({
-    limit: defaultParams?.limit,
-    page: defaultParams?.page,
-    search: defaultParams?.search,
-    filters: defaultParams?.filters,
+    limit: props?.defaultParams?.limit || defaultParams?.limit,
+    page: props?.defaultParams?.page || defaultParams?.page,
+    search: props?.defaultParams?.search || defaultParams?.search,
+    filters: props?.defaultParams?.filters || defaultParams?.filters,
   });
 
   const setSearch = (text: any) =>
@@ -61,13 +79,6 @@ const usePaginate = ({ defaultParams }: Props) => {
 };
 
 
-interface Props {
-    defaultParams: {
-        limit: number,
-        page: number,
-        search: string,
-        filters: {[key: string]: string}
-    }
-}
+
 
 export default usePaginate;

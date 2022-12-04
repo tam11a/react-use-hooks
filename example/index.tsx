@@ -1,16 +1,26 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { useTitle, useToggle } from '../.';
+import { usePaginate } from '../.';
 
 const App = () => {
-  // useTitle
-  useTitle('Hooks for React!!')
+  const {
+		limit,
+		setLimit,
+		page,
+		setPage,
+		search,
+		setSearch,
+		watch,
+		setFilterField,
+		getQueryParams,
+	} = usePaginate();
 
-  // useToggle
-  const {state, toggleState} = useToggle(true);
+
   return (
     <div>
-      State Value is: {state ? "true": "false"} <button onClick={() => toggleState()}>Toggle</button>
+		<button onClick={() => setPage(page - 1)}>-</button>
+		{page}
+		<button onClick={() => setPage(page + 1)}>+</button>		
     </div>
   );
 };
