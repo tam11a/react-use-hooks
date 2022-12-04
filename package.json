@@ -34,7 +34,6 @@
     "trailingComma": "es5"
   },
   "name": "react-use-hooks",
-  "author": "tam11a",
   "module": "dist/react-use-hooks.esm.js",
   "size-limit": [
     {
