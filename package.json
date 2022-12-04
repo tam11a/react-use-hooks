@@ -33,7 +33,7 @@
     "singleQuote": false,
     "trailingComma": "es5"
   },
-  "name": "react-use-hooks",
+  "name": "@tam11a/react-use-hooks",
   "module": "dist/react-use-hooks.esm.js",
   "size-limit": [
     {
