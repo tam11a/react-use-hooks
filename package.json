@@ -33,15 +33,15 @@
     "singleQuote": false,
     "trailingComma": "es5"
   },
-  "name": "use-hook",
-  "module": "dist/use-hook.esm.js",
+  "name": "@tam11a/react-use-hooks",
+  "module": "dist/react-use-hooks.esm.js",
   "size-limit": [
     {
-      "path": "dist/use-hook.cjs.production.min.js",
+      "path": "dist/react-use-hooks.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/use-hook.esm.js",
+      "path": "dist/react-use-hooks.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -58,5 +58,5 @@
     "typescript": "^3.9.10"
   },
   "author": "tam11a <ibrahimsadiktamim@gmail.com> (https://github.com/tam11a)",
-  "repository": "tam11a/use-hook"
+  "repository": "tam11a/react-use-hooks"
 }
